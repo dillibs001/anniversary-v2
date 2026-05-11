@@ -271,28 +271,19 @@ const audioRef = useRef(null);
               </div>
             </div>
 
-            {/* 3. Middle Right Label & Arrow */}
-            <div className="absolute top-1/2 right-[-10] text-white text-[9px] font-bold uppercase tracking-[0.2em] rotate-6 z-30 drop-shadow-md">
+           {/* Middle Right Label (Pulled safely away from the edge) */}
+            <div className="absolute top-1/2 right-4 md:right-2 text-white text-[8px] md:text-[9px] font-bold uppercase tracking-[0.2em] rotate-6 z-30 drop-shadow-md">
               ~Laughaholic~
             </div>
-            <div className="absolute top-[50%] right-20 text-white/50 text-3xl -rotate-45 scale-x-[-1] font-light z-20">
-              
-            </div>
 
-            {/* 4. Bottom Left Label & Arrow */}
-            <div className="absolute bottom-36 left-2 text-white text-[9px] font-bold uppercase tracking-[0.2em] z-30">
+            {/* Bottom Left Label (Kept the same) */}
+            <div className="absolute bottom-36 left-4 md:left-6 text-white text-[8px] md:text-[9px] font-bold uppercase tracking-[0.2em] z-30">
               Trail <br /> blazer
             </div>
-            <div className="absolute bottom-40 left-13 text-white/50 text-3xl rotate-[-80deg] font-light z-20">
-              
-            </div>
 
-            {/* 5. Bottom Right Label & Heart */}
-            <div className="absolute bottom-25 right-6 text-white text-[9px] font-bold uppercase tracking-[0.2em] text-right -rotate-3 z-30">
+            {/* Bottom Right Label (Pulled safely away from the edge) */}
+            <div className="absolute bottom-24 right-8 md:right-6 text-white text-[8px] md:text-[9px] font-bold uppercase tracking-[0.2em] text-right -rotate-3 z-30">
               Nollywood <br /> Binge Watcher
-            </div>
-            <div className="absolute bottom-12 right-12 text-white/80 text-2xl z-20 drop-shadow-lg rotate-12 hover:scale-110 transition-transform">
-              🤍
             </div>
 
             {/* 6. Main Title (Ana) */}
