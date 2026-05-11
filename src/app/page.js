@@ -152,23 +152,27 @@ const audioRef = useRef(null);
               <h2 className="text-white/90 text-center font-serif text-3xl tracking-widest uppercase mb-4 pt-2">
                 Fashionista
               </h2>
-{/* --- POLAROIDS MOVED TO THE EDGES --- */}
+              {/* --- POLAROIDS MOVED TO THE EDGES --- */}
 
                 {/* Top Left Polaroid (Moved out of center) */}
-                <div className="absolute top-30 left-1[-10] bg-white p-2 pb-10 shadow-2xl -rotate-6 w-36 z-40 hover:z-50 hover:scale-105 transition-all">
-                  <div className="w-full h-32 bg-stone-100 overflow-hidden">
-                    <img src={getImg("fashion-1_edyxh2")} className="w-full h-full object-cover" />
+               {/* --- POLAROIDS (Scaled down for mobile) --- */}
+
+                {/* Top Left Polaroid */}
+                <div className="absolute top-20 left-0 md:top-24 md:left-2 bg-white p-1.5 pb-5 md:p-2 md:pb-10 shadow-2xl -rotate-6 w-28 md:w-36 z-40 hover:z-50 hover:scale-105 transition-all">
+                  <div className="w-full h-24 md:h-32 bg-stone-100 overflow-hidden">
+                    <img src={getImg("fashion-1_edyxh2")} className="w-full h-full object-cover grayscale-0 md:grayscale-[10%] md:hover:grayscale-0" />
                   </div>
                 </div>
 
-                {/* Middle Right Polaroid (Pushed off the right edge slightly) */}
-                <div className="absolute top-1/3 -right-4 bg-white p-2 pb-8 shadow-2xl rotate-12 w-36 z-30 hover:z-50 hover:-translate-x-4 transition-all">
-                  <div className="w-full h-32 bg-stone-100 overflow-hidden">
-                    <img src={getImg("fashion-2_v7vkxq")} className="w-full h-full object-cover" />
+                {/* Middle Right Polaroid */}
+                <div className="absolute top-1/3 -right-2 md:-right-4 bg-white p-1.5 pb-5 md:p-2 md:pb-8 shadow-2xl rotate-12 w-28 md:w-36 z-30 hover:z-50 hover:-translate-x-4 transition-all">
+                  <div className="w-full h-24 md:h-32 bg-stone-100 overflow-hidden">
+                    <img src={getImg("fashion-2_v7vkxq")} className="w-full h-full object-cover grayscale-0 md:grayscale-[10%] md:hover:grayscale-0" />
                   </div>
                 </div>
-                {/* Bottom Left Polaroid (Pushed higher and further left on mobile) */}
-                <div className="absolute bottom-[110px] -left-2 md:bottom-24 md:left-6 bg-white p-2 pb-6 md:pb-8 shadow-2xl -rotate-12 w-24 md:w-32 z-30 hover:z-50 hover:scale-105 transition-all">
+
+                {/* Bottom Left Polaroid */}
+                <div className="absolute bottom-[110px] -left-2 md:bottom-24 md:left-6 bg-white p-1.5 pb-4 md:p-2 md:pb-8 shadow-2xl -rotate-12 w-20 md:w-32 z-30 hover:z-50 hover:scale-105 transition-all">
                   <div className="w-full h-20 md:h-28 bg-stone-100 overflow-hidden">
                     <img src={getImg("fashion-3_frrebe")} className="w-full h-full object-cover grayscale-0 md:grayscale-[10%] md:hover:grayscale-0" />
                   </div>
