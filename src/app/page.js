@@ -43,23 +43,23 @@ const audioRef = useRef(null);
     <main className="flex min-h-screen items-center justify-center bg-[#1a1614] p-4 md:p-8">
       <audio ref={audioRef} src={getAudio("RUELLE_-_I_Get_To_Love_You_Official_Lyric_Video_-_Ruelle_wmlw3w")} loop />
       
- <button 
+{/* FLOATING PLAY BUTTON (Made more compact on mobile) */}
+      <button 
         onClick={toggleMusic}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-50 bg-white/20 backdrop-blur-lg border border-white/40 text-white px-6 py-3 rounded-full font-serif text-sm uppercase tracking-[0.2em] shadow-2xl hover:bg-white/30 hover:scale-105 transition-all flex items-center gap-3"
+        className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 z-[100] bg-white/20 backdrop-blur-lg border border-white/40 text-white px-4 py-2 md:px-6 md:py-3 rounded-full font-serif text-[9px] md:text-sm uppercase tracking-[0.2em] shadow-2xl flex items-center gap-2 md:gap-3"
       >
         {isPlaying ? (
           <>
-            <span className="text-lg">⏸</span> 
+            <span className="text-sm md:text-lg">⏸</span> 
             Pause Soundtrack
           </>
         ) : (
           <>
-            <span className="text-lg animate-pulse">▶️</span> 
+            <span className="text-sm md:text-lg animate-pulse">▶️</span> 
             Play Soundtrack
           </>
         )}
       </button>
-      
       
       {/* 2. THE FLIPBOOK CONTAINER */}
       {/* width and height define the magazine aspect ratio */}
@@ -167,21 +167,20 @@ const audioRef = useRef(null);
                     <img src={getImg("fashion-2_v7vkxq")} className="w-full h-full object-cover" />
                   </div>
                 </div>
-
-                {/* Bottom Left Polaroid (Tucked in the bottom corner) */}
-                <div className="absolute bottom-24 left-30 bg-white p-2 pb-8 shadow-2xl -rotate-12 w-32 z-30 hover:z-50 hover:scale-105 transition-all">
-                  <div className="w-full h-28 bg-stone-100 overflow-hidden">
-                    <img src={getImg("fashion-3_frrebe")} className="w-full h-full object-cover" />
+                {/* Bottom Left Polaroid (Pushed higher and further left on mobile) */}
+                <div className="absolute bottom-[110px] -left-2 md:bottom-24 md:left-6 bg-white p-2 pb-6 md:pb-8 shadow-2xl -rotate-12 w-24 md:w-32 z-30 hover:z-50 hover:scale-105 transition-all">
+                  <div className="w-full h-20 md:h-28 bg-stone-100 overflow-hidden">
+                    <img src={getImg("fashion-3_frrebe")} className="w-full h-full object-cover grayscale-0 md:grayscale-[10%] md:hover:grayscale-0" />
                   </div>
                 </div>
 
-                {/* Birthday Wish (Bottom) */}
-                <div className="absolute bottom-4 right-2 left-20 text-right z-50">
-                  <p className="text-white/90 font-serif text-[10px] leading-relaxed italic drop-shadow-md">
-                    Celebrating two years of endless laughter, unforgettable <br/>
-                     moments, and a love story that just keeps getting better.,
+                {/* Anniversary Wish (Locked to the right side, completely clear of polaroid) */}
+                <div className="absolute bottom-20 md:bottom-6 right-4 md:right-2 w-[65%] md:w-auto text-right z-50">
+                  <p className="text-white/90 font-serif text-[10px] md:text-[11px] leading-relaxed italic drop-shadow-md">
+                    Celebrating two years of endless laughter, unforgettable 
+                    moments, and a love story that just keeps getting better.
                   </p>
-                  <p className="text-red-500 font-serif text-[11px] mt-1 font-bold uppercase tracking-widest drop-shadow-md">
+                  <p className="text-red-500 font-serif text-[10px] md:text-[11px] mt-1 font-bold uppercase tracking-widest drop-shadow-md">
                     ENDLESSLY YOURS!
                   </p>
                 </div>
