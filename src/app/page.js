@@ -252,12 +252,12 @@ const audioRef = useRef(null);
             <div className="absolute top-1 right-10 text-white/10 text-5xl rotate-90 font-light">✧</div>
 
             {/* 1. Top Left Label & Arrow */}
-            <div className="absolute top-28 left-6 text-white text-[9px] font-bold uppercase tracking-[0.2em] -rotate-12 z-30">
+            <div className="absolute top-28 left-4 text-white text-[9px] font-bold uppercase tracking-[0.2em] -rotate-12 z-30">
               Pediatrician
             </div>
             {/* Curving arrow pointing to photo */}
             <div className="absolute top-32 left-20 text-white/50 text-3xl rotate-[110deg] font-light z-20">
-              ⤷
+              
             </div>
 
             {/* 2. Center Image Frame (With your exact Cloudinary ID and white border) */}
@@ -272,23 +272,23 @@ const audioRef = useRef(null);
             </div>
 
             {/* 3. Middle Right Label & Arrow */}
-            <div className="absolute top-1/2 right-[-7] text-white text-[9px] font-bold uppercase tracking-[0.2em] rotate-6 z-30 drop-shadow-md">
+            <div className="absolute top-1/2 right-[-10] text-white text-[9px] font-bold uppercase tracking-[0.2em] rotate-6 z-30 drop-shadow-md">
               ~Laughaholic~
             </div>
-            <div className="absolute top-[45%] right-20 text-white/50 text-3xl -rotate-45 scale-x-[-1] font-light z-20">
-              ⤴
+            <div className="absolute top-[50%] right-20 text-white/50 text-3xl -rotate-45 scale-x-[-1] font-light z-20">
+              
             </div>
 
             {/* 4. Bottom Left Label & Arrow */}
-            <div className="absolute bottom-36 left-6 text-white text-[9px] font-bold uppercase tracking-[0.2em] z-30">
+            <div className="absolute bottom-36 left-2 text-white text-[9px] font-bold uppercase tracking-[0.2em] z-30">
               Trail <br /> blazer
             </div>
             <div className="absolute bottom-40 left-13 text-white/50 text-3xl rotate-[-80deg] font-light z-20">
-              ⤵
+              
             </div>
 
             {/* 5. Bottom Right Label & Heart */}
-            <div className="absolute bottom-24 right-6 text-white text-[9px] font-bold uppercase tracking-[0.2em] text-right -rotate-3 z-30">
+            <div className="absolute bottom-25 right-6 text-white text-[9px] font-bold uppercase tracking-[0.2em] text-right -rotate-3 z-30">
               Nollywood <br /> Binge Watcher
             </div>
             <div className="absolute bottom-12 right-12 text-white/80 text-2xl z-20 drop-shadow-lg rotate-12 hover:scale-110 transition-transform">
